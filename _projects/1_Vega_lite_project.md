@@ -1,8 +1,8 @@
 ---
-name: Vega Lite Example Project
+name: IS 445 Final Project Group 2
 tools: [Python, HTML, vega-lite]
 image: assets/pngs/cars.png
-description: This is a "showcase" project that uses vega-lite for interactive viz!
+description: This is a analysis of earthquakes by interactive charts.
 custom_js:
   - vega.min
   - vega-lite.min

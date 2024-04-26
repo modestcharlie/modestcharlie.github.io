@@ -5,13 +5,13 @@
 # NOTE: it looks like you need to rebuild + repush everytime you update this _config.yml file
 
 ### Site Settings ###
-title               : IS445 Final Project Group 2 
+title               : IS445 Jekyll Template 
 description         : >-
-                      This is a blog showcasing the final project of IS 445 made by Altair and Jupyter Notebook.
+                      I am definitely not a corgi!
 baseurl             : ""   # Change to empty quotes if you are hosting your site at <your-username>.github.io directly,
 #                                             otherwise will be hosted at <your-username>.github.io/{{base_url}}
-repository          : modestcharlie              # Change to <your-username> for github OR, if that doesn't work <your-username>/<your-username>.github.io (or remove it if you don't need remote projects) -- for example, I would put "jnaiman" without the quotes after the ":" here
-open_new_tab        : true                             # Opens external URLs in new tab (works for posts, projects and navbar only)
+repository          :                     # Change to <your-username> for github OR, if that doesn't work <your-username>/<your-username>.github.io (or remove it if you don't need remote projects) -- for example, I would put "jnaiman" without the quotes after the ":" here
+open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
 
 
 ### Plugins ###
@@ -34,13 +34,13 @@ nav_exclude:                                            # The following paths ar
 
 ### Author Info ###
 author:
-  name              : Chang Liu
-#  image             : https://source.unsplash.com/300x300/?corgi&derpy
+  name              : A. P. Corgi
+  image             : https://source.unsplash.com/300x300/?corgi&derpy
 #  behance           : your_username
 # dribbble          : your_username
-  email             : changl20@illinois.edu
+  email             : username@domain.com
 #  facebook          : your_username
-  github            : modestcharlie # JPN
+  github            : jnaiman # JPN
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
@@ -51,9 +51,9 @@ author:
 # stackoverflow     : your_user_id
 # tumblr            : your_username.tumblr.com
 #  twitch            : your_username
- # twitter           : your_username
+  twitter           : your_username
 #  vimeo             : your_username
- # youtube           : your_channel_name
+  youtube           : your_channel_name
 # keybase           : your_username
 
 
@@ -77,7 +77,7 @@ disqus:
 
 ### Analytics ###
 analytics:
-  enabled: true                                        # Set true to enable analytics
+  enabled: false                                        # Set true to enable analytics
   google:
     tracking_id: your-google-tracking-id
 
@@ -123,5 +123,3 @@ exclude:
   - "*.log"
   - "*.ipynb"
   - "python_notebooks/*"
-  - Gemfile
-  - Gemfile.lock

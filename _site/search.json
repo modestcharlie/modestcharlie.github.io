@@ -4,8 +4,16 @@
       "title"    : "The interactive chart for Assignment_8",
       "category" : "",
       "tags"     : "Technology, Blogging",
-      "url"      : "/IS445_Assignment8/blog/The-interactive-chart-for-Assignment_8",
+      "url"      : "/blog/The-interactive-chart-for-Assignment_8",
       "date"     : "2024-03-31 00:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "The Hello World of Blogs",
+      "category" : "",
+      "tags"     : "Technology, Blogging",
+      "url"      : "/blog/hello-blog-world",
+      "date"     : "2022-08-22 00:00:00 -0500"
     } 
   
 ]

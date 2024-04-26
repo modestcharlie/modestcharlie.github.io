@@ -4,5 +4,5 @@ permalink: /
 ---
 
 {% include landing.html %}
-[Check out my interactive chart for Assignment 8]({{site.baseurl}}/blog/The-interactive-chart-for-Assignment_8)
+[Please Click "Project" to view the final project page]
 

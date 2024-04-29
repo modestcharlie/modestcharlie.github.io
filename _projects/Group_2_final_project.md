@@ -1,8 +1,8 @@
 ---
 name: Group 2 Final Project
-tools: [Python, HTML, vega-lite]
-image: assets/pngs/cars.png
-description: This is a "showcase" project that uses vega-lite for interactive viz!
+tools: [Python, HTML, Altair]
+image: 
+description: This is the final project by group 2
 custom_js:
   - vega.min
   - vega-lite.min
@@ -11,20 +11,25 @@ custom_js:
 ---
 
 
-# Example including vega-lite
+# USGS Earthquakes Data Visualization
 
-Example comes from this [great blog post right here](https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html) that was also used in [our test import script](https://github.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/blob/main/week01/test_imports_week01.ipynb).
-
-We can use a vegachart HTML tag like so:
-{% include assignment.html %}
-
+We retrieved this data from USGS Earthquakes. [Link Here](https://www.usgs.gov/programs/earthquake-hazards/earthquakes) We used request API to keep updating our data.
 ```
-<vegachart schema-url="{{ site.baseurl }}/assets/json/cars.json" style="width: 100%"></vegachart>
+current_time = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S')
+api_url = "https://earthquake.usgs.gov/fdsnws/event/1/query"
+parameters = {
+    'format': 'geojson',  
+    'starttime': '2023-01-01',  
+    'endtime': current_time,  
+    'minmagnitude': 4.5}
+response = requests.get(api_url, params=parameters)
+data = response.json()
+earthquakes = data['features']
 ```
+{% include final_project.html %}
 
-<vegachart schema-url="{{ site.baseurl }}/assets/json/cars.json" style="width: 100%"></vegachart>
 
-In theory, you can also use [Jekyll hooks](https://jekyllrb.com/docs/plugins/hooks/) to do it, but I haven't figured out a way that looks nice yet.
+
 
 
 ## Search The Data & Methods

@@ -47,6 +47,8 @@ This structured dataset serves as a comprehensive resource for analyzing and vis
 ## About the dashboard
 The dashboard is divided into several interactive sections. The map section visually displays earthquake locations with red dots on a global map, where users can hover over each dot to see the earthquake's magnitude and the country or region it occurred in. The dashboard also includes plots that let users explore the relationship between the magnitude of earthquakes and other factors such as the number of people who felt the earthquake and the depth at which it occurred. Users can interact with sliders and selections on the dashboard to filter the data based on magnitude or time periods, enabling a tailored analysis. This approach offers an intuitive way for individuals, regardless of their expertise in data science, to engage with and derive insights from the earthquake dataset.
 
+By selecting specific time frames in the time series line chart, users can observe trends in earthquake activity over time. The timeline allows users to brush over periods to see related data in other interactive charts, such as common magnitudes of earthquakes during specific times that can help to assess the severity of seismic activity and the number of earthquake occurrences of countries within a selected time frame which shows which countries or regions are more prone to seismic activity, aiding understanding of global earthquake risk distribution.
+
 ### Contextual Data (Boundary)
 See the overlapping part between the following graphs. [Source of Boundary Map](https://www.learner.org/wp-content/interactive/dynamicearth/tectonicsmap/index.html)
 
